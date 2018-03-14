@@ -1,0 +1,11 @@
+#compdef workon
+_workon() {
+	local state
+
+  _arguments \
+    '1: :->dir'
+
+  case $state in
+    (dir) _arguments '1:projects:($(ls ~/.workon_projects))' ;;
+  esac
+}
