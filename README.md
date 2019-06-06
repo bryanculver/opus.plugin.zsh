@@ -39,5 +39,5 @@ $ opus -d project_name
 
 *Example:*
 ```bash
-$ opus nodeapp
+$ opus -d nodeapp
 ```
