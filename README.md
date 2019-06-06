@@ -22,12 +22,12 @@ $ opus -c nodeapp ~/Workspace/Repos/nodeapp
 
 *Syntax:*
 ```bash
-$ workon project_name
+$ opus project_name
 ```
 
 *Example:*
 ```bash
-$ workon nodeapp
+$ opus nodeapp
 ```
 
 ### Remove a Project
