@@ -1,22 +1,43 @@
-# workon
+# opus
 
-Lightly simple utility to jump between projects.
+Lightly simple utility to jump between projects from anywhere. No more `cd ../../../../` nonsense!
 
-Leverages links in a `~/.workon_projects/` folder.
+Leverages links in a `~/.opus_projects/` folder.
 
-## Use
+## How to Use:
 
-### startworkon - `startworkon [name] [directory]`
+### Adding a New Project
 
-*Example:*
-`$ startworkon nodeapp ~/Workspace/Repos/bryanculver/nodeapp`
-
-### workon - `workon [name]`
-
-*Example:*
-`$ workon nodeapp`
-
-### stopworkon - `stopworkon [name]`
+*Syntax:*
+```bash
+$ opus -c project_name /path/to/project/folder
+```
 
 *Example:*
-`$ stopworkon nodeapp`
+```bash
+$ opus -c nodeapp ~/Workspace/Repos/nodeapp
+```
+
+### Work on a Project
+
+*Syntax:*
+```bash
+$ workon project_name
+```
+
+*Example:*
+```bash
+$ workon nodeapp
+```
+
+### Remove a Project
+
+*Syntax:*
+```bash
+$ opus -d project_name
+```
+
+*Example:*
+```bash
+$ opus nodeapp
+```
